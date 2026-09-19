@@ -1,0 +1,407 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-cinzel: 'Cinzel', serif;
+    --font-cinzel-dec: 'Cinzel Decorative', serif;
+    --font-montserrat: 'Montserrat', sans-serif;
+    --font-orbitron: 'Orbitron', monospace;
+    --font-oswald: 'Oswald', sans-serif;
+    --font-russo: 'Russo One', sans-serif;
+  }
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+.font-cinzel-dec {
+  font-family: 'Cinzel Decorative', serif;
+}
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+.font-orbitron {
+  font-family: 'Orbitron', monospace;
+}
+.font-oswald {
+  font-family: 'Oswald', sans-serif;
+}
+.font-russo {
+  font-family: 'Russo One', sans-serif;
+}
+
+/* Casino Metallic & Gold Gradients */
+.gold-gradient-text {
+  background: linear-gradient(180deg, #ffffff 0%, #fff6c0 15%, #ffd700 35%, #f59e0b 60%, #b45309 85%, #78350f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-3d-text {
+  background: linear-gradient(180deg, #ffffff 0%, #fff7b8 20%, #ffd700 45%, #ea580c 80%, #7c2d12 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 0 #78350f) drop-shadow(0 4px 0 #450a0a) drop-shadow(0 6px 12px rgba(0, 0, 0, 0.9));
+}
+
+/* Flaming 50 Specialized Blazing Styles */
+.flaming-gradient-text {
+  background: linear-gradient(180deg, #ffffff 0%, #fff3a1 15%, #ffb703 35%, #fb8500 55%, #d90429 80%, #6a040f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 0 #370617) drop-shadow(0 0 16px rgba(255, 107, 0, 0.95)) drop-shadow(0 0 35px rgba(239, 35, 60, 0.75));
+}
+
+.flaming-marquee-logo {
+  background: linear-gradient(180deg, #ffffff 0%, #fff07c 12%, #ffaa00 32%, #ff5400 58%, #d00000 82%, #370617 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 0 #370617) drop-shadow(0 4px 0 #1a0208) drop-shadow(0 0 20px rgba(255, 120, 0, 0.9)) drop-shadow(0 0 45px rgba(220, 38, 38, 0.8));
+}
+
+.flaming-number-50 {
+  background: linear-gradient(180deg, #fffbeb 0%, #fef08a 12%, #f59e0b 28%, #ea580c 50%, #dc2626 75%, #7f1d1d 92%, #450a0a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 0 #450a0a) drop-shadow(0 4px 0 #1f0202) drop-shadow(0 0 25px rgba(255, 69, 0, 1)) drop-shadow(0 0 50px rgba(220, 38, 38, 0.85));
+}
+
+.flaming-cabinet-border {
+  border-image: linear-gradient(180deg, #ffd166 0%, #f77f00 25%, #d62828 50%, #f77f00 75%, #ffd166 100%) 1;
+}
+
+@keyframes flameFlicker {
+  0%, 100% {
+    filter: drop-shadow(0 0 15px rgba(255, 100, 0, 0.85)) drop-shadow(0 0 35px rgba(230, 40, 40, 0.65));
+    transform: scale(1);
+  }
+  25% {
+    filter: drop-shadow(0 0 22px rgba(255, 160, 0, 0.95)) drop-shadow(0 0 45px rgba(255, 50, 0, 0.8));
+    transform: scale(1.02) skewX(-0.5deg);
+  }
+  50% {
+    filter: drop-shadow(0 0 12px rgba(255, 80, 0, 0.75)) drop-shadow(0 0 28px rgba(200, 20, 20, 0.55));
+    transform: scale(0.99) skewX(0.5deg);
+  }
+  75% {
+    filter: drop-shadow(0 0 26px rgba(255, 180, 0, 1)) drop-shadow(0 0 55px rgba(255, 70, 0, 0.85));
+    transform: scale(1.03);
+  }
+}
+
+.animate-flame-flicker {
+  animation: flameFlicker 1.8s ease-in-out infinite;
+}
+
+@keyframes burningPulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(255, 100, 0, 0.6), 0 0 45px rgba(220, 38, 38, 0.4), inset 0 0 15px rgba(255, 160, 0, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 35px rgba(255, 150, 0, 0.9), 0 0 70px rgba(239, 68, 68, 0.65), inset 0 0 25px rgba(255, 200, 0, 0.5);
+  }
+}
+
+.animate-burning-pulse {
+  animation: burningPulse 2s ease-in-out infinite;
+}
+
+.casino-marquee-logo {
+  background: linear-gradient(180deg, #ffffff 0%, #fffadb 15%, #ffd700 38%, #f59e0b 65%, #92400e 88%, #451a03 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 0 #78350f) drop-shadow(0 4px 0 #450a0a) drop-shadow(0 0 25px rgba(255, 215, 0, 0.75));
+}
+
+.casino-number-50 {
+  background: linear-gradient(180deg, #ffe4e6 0%, #ff5252 20%, #dc2626 50%, #991b1b 80%, #450a0a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 0 #450a0a) drop-shadow(0 4px 0 #1f0202) drop-shadow(0 0 25px rgba(239, 68, 68, 0.95));
+}
+
+.ruby-gradient-text {
+  background: linear-gradient(180deg, #fecaca 0%, #ef4444 30%, #dc2626 60%, #991b1b 85%, #450a0a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 0 #450a0a) drop-shadow(0 0 16px rgba(239, 68, 68, 0.8));
+}
+
+.gold-gradient-badge {
+  background: linear-gradient(180deg, #fff7b8 0%, #ffc107 45%, #d97706 75%, #8b4513 100%);
+}
+
+.slot-cabinet-shadow {
+  box-shadow: 
+    0 35px 70px -15px rgba(0, 0, 0, 0.95),
+    0 0 50px 10px rgba(220, 38, 38, 0.35),
+    0 0 80px 20px rgba(245, 158, 11, 0.2),
+    inset 0 2px 6px rgba(255, 255, 255, 0.4),
+    inset 0 -6px 16px rgba(0, 0, 0, 0.9);
+}
+
+.metallic-chassis-bevel {
+  background: linear-gradient(180deg, 
+    #ffd700 0%, 
+    #b45309 3%, 
+    #261005 6%, 
+    #0d0402 50%, 
+    #1f0a04 94%, 
+    #b45309 97%, 
+    #ffd700 100%
+  );
+}
+
+.reel-glass-reflection-sweep {
+  position: relative;
+  overflow: hidden;
+}
+
+.reel-glass-reflection-sweep::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -100%;
+  width: 60%;
+  height: 200%;
+  background: linear-gradient(
+    65deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.03) 35%,
+    rgba(255, 255, 255, 0.14) 50%,
+    rgba(255, 255, 255, 0.03) 65%,
+    transparent 100%
+  );
+  transform: rotate(20deg);
+  pointer-events: none;
+  animation: glassSweep 7s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes glassSweep {
+  0%, 70% {
+    left: -120%;
+  }
+  85%, 100% {
+    left: 220%;
+  }
+}
+
+.reel-glass-effect {
+  background: linear-gradient(180deg, 
+    rgba(255, 255, 255, 0.12) 0%, 
+    rgba(255, 255, 255, 0.03) 15%, 
+    rgba(0, 0, 0, 0.1) 50%, 
+    rgba(0, 0, 0, 0.45) 85%, 
+    rgba(255, 255, 255, 0.08) 100%
+  );
+}
+
+.reel-cylinder-white-shading {
+  background: linear-gradient(180deg, 
+    rgba(20, 10, 5, 0.5) 0%, 
+    rgba(40, 25, 15, 0.18) 16%, 
+    rgba(255, 255, 255, 0.25) 50%, 
+    rgba(40, 25, 15, 0.18) 84%, 
+    rgba(20, 10, 5, 0.6) 100%
+  );
+}
+
+.reel-cylinder-shading {
+  background: linear-gradient(180deg, 
+    rgba(0, 0, 0, 0.85) 0%, 
+    rgba(0, 0, 0, 0.25) 16%, 
+    rgba(0, 0, 0, 0.0) 35%, 
+    rgba(255, 255, 255, 0.04) 50%, 
+    rgba(0, 0, 0, 0.0) 65%, 
+    rgba(0, 0, 0, 0.3) 84%, 
+    rgba(0, 0, 0, 0.9) 100%
+  );
+}
+
+.prize-cylinder-shading {
+  background: linear-gradient(180deg, 
+    rgba(160, 10, 5, 0.75) 0%, 
+    rgba(240, 90, 10, 0.25) 18%, 
+    rgba(255, 200, 0, 0.06) 35%, 
+    rgba(255, 255, 255, 0.18) 50%, 
+    rgba(255, 180, 0, 0.06) 65%, 
+    rgba(180, 30, 5, 0.4) 82%, 
+    rgba(60, 5, 2, 0.9) 100%
+  );
+}
+
+/* Glowing animations */
+@keyframes pulseGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.8)) drop-shadow(0 0 30px rgba(255, 140, 0, 0.6));
+    transform: scale(1);
+  }
+  50% {
+    filter: drop-shadow(0 0 25px rgba(255, 235, 59, 1)) drop-shadow(0 0 45px rgba(255, 87, 34, 0.8));
+    transform: scale(1.03);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 1.4s ease-in-out infinite;
+}
+
+@keyframes paylineFlash {
+  0%, 100% {
+    opacity: 1;
+    filter: drop-shadow(0 0 8px #ffffff) drop-shadow(0 0 16px #ffea00);
+  }
+  50% {
+    opacity: 0.65;
+    filter: drop-shadow(0 0 3px #ffea00);
+  }
+}
+
+.animate-payline-flash {
+  animation: paylineFlash 0.8s ease-in-out infinite;
+}
+
+@keyframes spinBlur {
+  0% {
+    filter: blur(4px);
+    transform: translateY(-2px);
+  }
+  50% {
+    filter: blur(6px);
+    transform: translateY(2px);
+  }
+  100% {
+    filter: blur(4px);
+    transform: translateY(-2px);
+  }
+}
+
+.animate-spin-blur {
+  animation: spinBlur 0.12s infinite;
+}
+
+/* 3D Casino Cabinet & Machined Metal Shaders */
+.cabinet-gold-frame {
+  background: linear-gradient(135deg, 
+    #ffe270 0%, 
+    #d4a017 12%, 
+    #7a4b08 24%, 
+    #fadc5a 38%, 
+    #995c0d 50%, 
+    #fef08a 62%, 
+    #854d0e 75%, 
+    #ffd54f 88%, 
+    #5f370e 100%
+  );
+  box-shadow: 
+    0 0 0 2px #3e1f07,
+    0 4px 15px rgba(0, 0, 0, 0.9),
+    inset 0 1px 2px rgba(255, 255, 255, 0.6),
+    inset 0 -2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.cabinet-black-lacquer {
+  background: radial-gradient(ellipse at 50% 20%, #1f0b04 0%, #0c0402 60%, #000000 100%);
+}
+
+.neon-pillar-red {
+  background: linear-gradient(180deg, 
+    #7f1d1d 0%, 
+    #ef4444 25%, 
+    #ff6b6b 50%, 
+    #ef4444 75%, 
+    #7f1d1d 100%
+  );
+  box-shadow: 
+    0 0 12px 2px rgba(239, 68, 68, 0.8),
+    0 0 25px 6px rgba(220, 38, 38, 0.4),
+    inset 0 0 4px rgba(255, 255, 255, 0.8);
+}
+
+.recessed-socket {
+  box-shadow: 
+    inset 0 4px 12px rgba(0, 0, 0, 0.95),
+    inset 0 1px 2px rgba(0, 0, 0, 0.9),
+    0 1px 0 rgba(255, 215, 0, 0.2);
+}
+
+.gold-bevel-border {
+  border: 2px solid #eab308;
+  border-image: linear-gradient(to bottom right, #fef08a, #ca8a04, #713f12, #fef08a) 1;
+}
+
+/* Premium Arcade Push Button 3D Styling */
+.arcade-push-btn {
+  box-shadow: 
+    0 8px 0 #5c2409,
+    0 12px 24px rgba(0, 0, 0, 0.9),
+    0 0 25px rgba(245, 158, 11, 0.5),
+    inset 0 2px 4px rgba(255, 255, 255, 0.6);
+  transition: all 0.1s ease-out;
+}
+
+.arcade-push-btn:hover:not(:disabled) {
+  box-shadow: 
+    0 9px 0 #5c2409,
+    0 14px 28px rgba(0, 0, 0, 0.95),
+    0 0 35px rgba(255, 215, 0, 0.7),
+    inset 0 2px 5px rgba(255, 255, 255, 0.7);
+  transform: translateY(-2px);
+}
+
+.arcade-push-btn:active:not(:disabled) {
+  box-shadow: 
+    0 2px 0 #5c2409,
+    0 4px 10px rgba(0, 0, 0, 0.9),
+    0 0 15px rgba(245, 158, 11, 0.4),
+    inset 0 1px 2px rgba(0, 0, 0, 0.5);
+  transform: translateY(6px);
+}
+
+@keyframes sunburstRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-sunburst {
+  animation: sunburstRotate 25s linear infinite;
+}
+
+@keyframes coinTumble {
+  0% {
+    transform: scaleX(1) rotate(0deg);
+  }
+  25% {
+    transform: scaleX(0.2) rotate(90deg);
+  }
+  50% {
+    transform: scaleX(-1) rotate(180deg);
+  }
+  75% {
+    transform: scaleX(-0.2) rotate(270deg);
+  }
+  100% {
+    transform: scaleX(1) rotate(360deg);
+  }
+}
+
+@keyframes meterSweep {
+  0% {
+    top: 100%;
+    opacity: 0.8;
+  }
+  100% {
+    top: -20%;
+    opacity: 0.1;
+  }
+}
+
+.animate-meter-sweep {
+  animation: meterSweep 0.6s linear infinite;
+}
+
+

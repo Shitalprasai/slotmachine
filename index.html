@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <script>
+      (function() {
+        try {
+          var _f = window.fetch;
+          Object.defineProperty(window, 'fetch', {
+            configurable: true,
+            enumerable: true,
+            get: function() {
+              return _f;
+            },
+            set: function(v) {
+              _f = v;
+            }
+          });
+        } catch (e) {}
+      })();
+    </script>
+    <title>Flaming 50 - 3-Reel Blazing Casino Slot</title>
+    <meta name="description" content="Production-grade 3D physical casino slot machine featuring realistic curved display, cylindrical reels, embedded physical control deck, 5 paylines, and flanking WebGL fire effects." />
+    <meta property="og:title" content="Flaming 50 - 3-Reel Blazing Casino Slot" />
+    <meta property="og:description" content="Production-grade 3D physical casino slot machine featuring realistic curved display, cylindrical reels, embedded physical control deck, 5 paylines, and flanking WebGL fire effects." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&family=Orbitron:wght@500;600;700;800;900&family=Oswald:wght@600;700&family=Russo+One&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-[#45070e] text-white antialiased select-none overflow-x-hidden">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

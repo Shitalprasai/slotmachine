@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix Remix Remix Golden 50 - 3-Reel Casino Slot",
+  "description": "Production-grade 3D physical casino slot machine featuring realistic curved display, cylindrical reels, embedded physical control deck, 5 paylines, and flanking WebGL fire effects.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

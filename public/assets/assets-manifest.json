@@ -1,0 +1,23 @@
+{
+  "name": "Golden 50 Asset Architecture",
+  "version": "1.0.0",
+  "directories": {
+    "background": "/assets/background/ (Casino room backdrops, ambient lighting, bokeh lights)",
+    "machine": "/assets/machine/ (Outer cabinet bezels, gold rims, physical casing)",
+    "symbols": "/assets/symbols/ (High-res PNG/SVG replacement for SEVEN, WILD, BELL, 3BAR, 2BAR, 1BAR, CHERRY, LEMON)",
+    "ui": "/assets/ui/ (SPIN button texture, meter boxes, payline pills)",
+    "effects": "/assets/effects/ (Light rays, coin sprites, spark textures)",
+    "jackpot": "/assets/jackpot/ (Grand/Major/Minor/Mini meter artwork)",
+    "audio": "/assets/audio/ (WAV/MP3 audio overrides for mechanical reel stop, spin rumble, win chime)"
+  },
+  "symbolsFormat": {
+    "SEVEN": "/assets/symbols/seven.png",
+    "WILD": "/assets/symbols/wild.png",
+    "BELL": "/assets/symbols/bell.png",
+    "TRIPLE_BAR": "/assets/symbols/triple_bar.png",
+    "DOUBLE_BAR": "/assets/symbols/double_bar.png",
+    "BAR": "/assets/symbols/bar.png",
+    "CHERRY": "/assets/symbols/cherry.png",
+    "LEMON": "/assets/symbols/lemon.png"
+  }
+}
